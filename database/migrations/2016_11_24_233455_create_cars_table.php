@@ -26,6 +26,7 @@ class CreateCarsTable extends Migration
             $table->integer('power');
             $table->string('capacity');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

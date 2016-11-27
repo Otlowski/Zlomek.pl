@@ -22,6 +22,7 @@ class CreateCarsPartsTable extends Migration
             $table->string('car_model');
             $table->string('production_year');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
