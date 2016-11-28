@@ -1,91 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
 
-        <title>Laravel</title>
+<head>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+	<meta charset = "utf-8">
+	<title> Złomek- znajdź swojego grata</title>
+        <link rel="stylesheet"  href="/css/style.css">
+	<meta http-equiv="Content-type" content="text/html; charset=windows-1250" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+</head>
 
-            .full-height {
-                height: 100vh;
-            }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+<body>
+	<div id= "grad">
+	<div id= "page">
+		<header>
+			<div id = "logo">
+			<img src ="img/banner.jpg">
+			</div>
+<!-- Navbar -->
+			<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand active" href="#">Zlomek</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Page 1-1</a></li>
+					<li><a href="#">Page 1-2</a></li>
+					<li><a href="#">Page 1-3</a></li>
+				</ul>
+					</li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+				</ul>
+			<form class="navbar-form navbar-left">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search">
+				<div class="input-group-btn">
+				<button class="btn btn-default" type="submit">
+				<i class="glyphicon glyphicon-search"></i>
+				</button>
+				</div>
+				</div>
+			</form>
+                            @if (Route::has('login'))
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="{{ url('/login') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="{{ url('/register') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+                            @endif
+			</div>
+			</div>
+			</nav>
+  
 
-            .position-ref {
-                position: relative;
-            }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+		</header>
+		
+		<div id="content">
+			<div class = "primary">
+			<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+                                                    <div class="image"><img src="/img/fiat.jpg" alt="" /></div><div class="content">
+								<h2>Samochód<br />
+								Roku</h2>
+								<p>Fiat 126 (centoventisei) – samochód osobowy skonstruowany w zakładach FIAT, produkowany we Włoszech w latach 1972–1980, a w Polsce od 6 czerwca 1973 do 22 września 2000 roku (Polski Fiat 126p)[1]. Polska wersja licencyjna produkowana była przez Fabrykę Samochodów Małolitrażowych „Polmo” Bielsko-Biała w Bielsku-Białej oraz w Tychach.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="img/fiatt.jpg" alt="" /></div><div class="content">
+								<h2>Samochód<br />
+								Miesiąca</h2>
+								<p>Polski Fiat 125p – samochód osobowy klasy średniej produkowany w Polsce w FSO w Warszawie od 1967 do 1991 roku na podstawie licencji włoskiej firmy FIAT. Po wygaśnięciu licencji w 1983 roku nazwę zmieniono na FSO 125p. Spotykane są też oznaczenia FSO 1300/1500.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="img/manta.jpg" alt="" /></div><div class="content">
+								<h2>Samochód<br />Dnia
+								</h2>
+								<p>Opel Manta – sportowy samochód osobowy z dwudrzwiowym nadwoziem typu coupé produkowany przez niemiecką firmę Opel w latach 1970–1988.</p>
+							</div>
+						</section>
+					</section>
+			</div>
+			<div class = "secondary">
+			dodatkowa zawartosc
+			</div>
+		</div>
+		
+		
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="clear">
+							
+<!--				<li><a href="https://www.facebook.com/krystian.liris" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/lirek93/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
+							
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Untitled</li><li>Design: <a href="#">Krystian Niko Liris & Maciej Majewski & Maciej Otłowski</a></li>
+			</ul>
+		</footer>
+					
+	</div>	
+	</div>	
+</body>
 
-            .content {
-                text-align: center;
-            }
 
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    <a href="{{ url('/login') }}">Login</a>
-                    <a href="{{ url('/register') }}">Register</a>
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
 </html>
