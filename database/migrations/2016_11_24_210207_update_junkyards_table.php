@@ -14,7 +14,7 @@ class UpdateJunkyardsTable extends Migration
     public function up()
     {
          Schema::table('junkyards', function($table) {
-                $table->integer('phone_number')->after('location')->nullable();
+                $table->string('phone_number')->after('location')->nullable();
             });
     }
 
