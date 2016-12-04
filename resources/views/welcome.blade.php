@@ -72,15 +72,25 @@
 		
 		<div id="content">
 			<div class = "primary">
-			<!-- Two -->
+			<!-- Two -->    @foreach($cars as $car)
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
                                                     <div class="image"><img src="/img/fiat.jpg" alt="" /></div><div class="content">
-								<h2>Samochód<br />
+                                                        <div class=""></div>
+                                                        <h2>{{$car->car_brand}}</h2>
+                                                        <h4>model: {{$car->car_model}}</h4>
+                                                        <h4>cena: {{$car->price}}PLN</h4>
+                                                        <h4>rok produkcji: {{$car->production_year}}r.</h4>
+                                                        <h4>przebieg: {{$car->mileage}}</h4>
+                                                        <h4>paliwo: {{$car->fuel}}</h4>
+                                                        <h4>moc: {{$car->power}}</h4>
+                                                        <h4>pojemność: {{$car->capacity}}cm^3</h4>
+<!--								<h2>Samochód<br />
 								Roku</h2>
-								<p>Fiat 126 (centoventisei) – samochód osobowy skonstruowany w zakładach FIAT, produkowany we Włoszech w latach 1972–1980, a w Polsce od 6 czerwca 1973 do 22 września 2000 roku (Polski Fiat 126p)[1]. Polska wersja licencyjna produkowana była przez Fabrykę Samochodów Małolitrażowych „Polmo” Bielsko-Biała w Bielsku-Białej oraz w Tychach.</p>
+								<p>Fiat 126 (centoventisei) – samochód osobowy skonstruowany w zakładach FIAT, produkowany we Włoszech w latach 1972–1980, a w Polsce od 6 czerwca 1973 do 22 września 2000 roku (Polski Fiat 126p)[1]. Polska wersja licencyjna produkowana była przez Fabrykę Samochodów Małolitrażowych „Polmo” Bielsko-Biała w Bielsku-Białej oraz w Tychach.</p>-->
 							</div>
 						</section>
+                                            @endforeach
 						<section class="spotlight">
 							<div class="image"><img src="img/fiatt.jpg" alt="" /></div><div class="content">
 								<h2>Samochód<br />

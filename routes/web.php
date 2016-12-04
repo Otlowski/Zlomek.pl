@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*MODULE ROUTES*/
+
+
+Route::get('/', 'Cars\CarsController@listCars');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
