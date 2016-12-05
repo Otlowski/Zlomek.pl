@@ -75,7 +75,7 @@
 			<!-- Two -->    @foreach($cars as $car)
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-                                                    <div class="image"><img src="/img/fiat.jpg" alt="" /></div><div class="content">
+                                                    <div class="image"><img src="/img/ads/{{$car->image}}.jpg" alt="" /></div><div class="content">
                                                         <div class=""></div>
                                                         <h2>{{$car->car_brand}}</h2>
                                                         <h4>model: {{$car->car_model}}</h4>
