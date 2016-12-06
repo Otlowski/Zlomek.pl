@@ -249,10 +249,25 @@
 		.form-inside 
 		{
 			
-			height=200px;
-			width=100px;
-			background red;
-			
-		}
+			height:200px;
+			width:100px;
+			background:red;
 		
+		}
+               
+		.form-group
+                {
+                    height: 60px;
+                    
+                }
+                .register-button
+                {
+                    margin-left:95px;
+                }
+                
+                .form-style
+                {
+                    height: 350px;
+                }
+                
 		

@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Route::get('/', 'Cars\CarsController@listCars');
 
+//Route::get('/home', 'Users\UserController@listUsers');
 
 Auth::routes();
 
