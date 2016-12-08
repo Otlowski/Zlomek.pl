@@ -139,7 +139,7 @@
 }
 /* wyrownanie obrazka i tekstu*/
 .spotlight .content {
-    padding: 2em 4em 0.1em 4em ;
+    padding: 2em 4em 0.1em 15em ;
     -moz-order: 2;
     -webkit-order: 2;
     -ms-order: 2;
@@ -147,7 +147,7 @@
     max-width: 48em;
     width: 60%;
     color:#fff;
-    font-size:12px;
+    font-size:14px!important;
 
 }
 .secondary , #contact{
@@ -229,7 +229,7 @@
     margin-top:80px;
     width: 50%;
     width: 600px;
-    height: 300px;
+    height: 40%;
     color:#fff;
 }
 
@@ -241,4 +241,13 @@
     width: 600px;
     height: 200px;
     color:#fff;
+}
+.form-control{
+    display: block;
+    width: 180px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
 }

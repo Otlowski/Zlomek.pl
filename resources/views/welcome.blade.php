@@ -30,14 +30,14 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>                        
                                 </button>
-                                <a class="navbar-brand active" href="#">Mój Złomek</a>
+                                <a class="navbar-brand active" href="/">Mój Złomek</a>
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
                                 <ul class="nav navbar-nav">
 
 
-                                    <li><a href="#">Dodaj ogłoszenie</a></li>
-                                    <li><a href="#">Wyszukaj</a></li>
+                                    <li><a href="/addcar">Dodaj ogłoszenie</a></li>
+                                    <li><a href="/search">Wyszukaj</a></li>
 
                                 </ul>
                                 <form class="navbar-form navbar-left">
@@ -74,13 +74,13 @@
                                 <div class="content">
                                     <div class=""></div>
                                     <h2>{{$car->car_brand}}</h2>
-                                    <h4>model: {{$car->car_model}}</h4>
-                                    <h4>cena: {{$car->price}}PLN</h4>
-                                    <h4>rok produkcji: {{$car->production_year}}r.</h4>
-                                    <h4>przebieg: {{$car->mileage}}</h4>
-                                    <h4>paliwo: {{$car->fuel}}</h4>
-                                    <h4>moc: {{$car->power}}</h4>
-                                    <h4>pojemność: {{$car->capacity}}cm^3</h4>
+                                        model: {{$car->car_model}}<br>
+                                        cena: {{$car->price}}PLN<br>
+                                        rok produkcji: {{$car->production_year}}r.<br>
+                                        przebieg: {{$car->mileage}}<br>
+                                        paliwo: {{$car->fuel}}<br>
+                                        moc: {{$car->power}}<br>
+                                        pojemność: {{$car->capacity}}cm^3<br>
 
                                 </div>
                             </section>

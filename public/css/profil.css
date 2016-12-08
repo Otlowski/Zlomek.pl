@@ -7,7 +7,7 @@
 }
 .collapse navbar-collapse, #myNavbar{
     background-color: #000000;
-    width: 960px;   
+    
 }
 .container-fluid{
     background-color: #000000;
@@ -176,19 +176,52 @@
     text-decoration: none;
     outline: none;
     color: #dff0d8;
-    background-color: #3CED21;
+    background-color: #CC0000;
     border: none;
     border-radius: 17px;
-    box-shadow: 0 2px #B9FFAE;
+    box-shadow: 0 2px #CC0000;
 }
 
 .button-profile:hover {background-color: #3e8e41}
 
 .button-profile:active {
-    background-color: #3e8e41;
+    background-color: #660000;
     box-shadow: 0 2px #666;
     transform: translateY(2px);
 }
+
+.button-profil {
+    display: inline-block;
+    padding: 8px 22px;
+    font-size: 16;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #dff0d8;
+    background-color: #CC0000;
+    border: none;
+    border-radius: 17px;
+    box-shadow: 0 2px #CC0000;
+}
+
+.button-profil:hover {
+    background-color: #660000;
+    box-shadow: 0 2px #660000;
+}
+
+.button-profil:active {
+    background-color: #660000;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+.select-model
+{
+width:174px;
+height:25px;
+}
+
 #page {
     width: 960px;
     margin: 0 auto;
@@ -258,7 +291,7 @@
     margin:0 auto;
     width: 960px;
     background: #000000!important;
-
+    border:none!important;
 
 }
 #app

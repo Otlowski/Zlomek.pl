@@ -1,0 +1,257 @@
+#grad {
+    background: #E5E589; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#FFAD62, #FFD3AB, #B25F12, #FFAD62); /* Safari */
+    background: -o-radial-gradient(#FFAD62, #FFD3AB, #B25F12, #FFAD62); /* Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#FFAD62, #FFD3AB, #B25F12, #FFAD62); /* Firefox 3.6 to 15 */
+    background: radial-gradient(#FFAD62, #FFD3AB, #B25F12, #FFAD62); /* Standard syntax */
+}
+.collapse navbar-collapse, #myNavbar{
+    background-color: #000000;
+
+}
+.container-fluid{
+    background-color: #000000;
+}
+.primary , #logo {
+    float: center;
+
+
+}
+
+
+
+
+
+
+div.box {
+    text-align:center;
+    width:960px;
+    background:#222222;
+    border:1px solid #262626;
+}
+
+div.box h1 {
+    text-align:center;
+    margin:0 auto;
+    color:#fff;
+    font-size:18px;
+    text-transform:uppercase;
+    padding:5px 0 5px 5px;
+    border-bottom:1px solid #161712;
+    border-top:1px solid #161712;
+}
+
+div.box label {
+    text-align:center;
+    margin:0 auto;
+    width:30%;
+    display: block;
+    background:#b25f12;
+    border-top:1px solid #ffd3ab;
+    border-bottom:1px solid #ffd3ab;
+    padding:10px 0 10px 0;
+}
+
+div.box label span {
+    text-align:center;
+    display: block;
+    color:#bbbbbb;
+    font-size:12px;
+    float:left;
+    width:100px;
+    text-align:right;
+    padding:5px 20px 0 0;
+}
+
+div.box .haslo {
+    text-align:center;
+    padding:10px 10px;
+    width:150px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+}
+
+div.box .wiadomosc {
+    text-align:center;
+    margin:0 auto;
+    padding:7px 7px;
+    width:200px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+
+
+}
+
+div.box .button	{
+    text-align:center;
+
+    margin: 0 auto;
+    padding:4px 7px;
+    background:#CC0000;
+    color: #fff;
+    border:0px;
+
+    top:10px;
+    left:380px;
+    width:174px;
+    border-bottom: 1px double #660000;
+    border-top: 1px double #660000;
+    border-left:1px double #FF0033;
+    border-right:1px double #FF0033;
+}
+
+.wpis{
+    width: 174px;
+}
+.button-photo{
+    width: 174px;
+}
+#page {
+    width: 960px;
+    margin: 0 auto;
+
+    
+}
+
+/* Footer */
+
+#footer {
+
+    padding: 6em 0 4em 0 ;
+    background-color: #000000;
+    text-align: center;
+}
+
+#footer .icons {
+    font-size: 1.25em;
+}
+
+#footer .icons a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#footer .icons a:hover {
+    color: #fff;
+}
+
+#footer .copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
+    letter-spacing: 0.225em;
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#footer .copyright li {
+    border-left: solid 1px rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    line-height: 1em;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+
+#footer .copyright li:first-child {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#footer .copyright li a {
+    color: inherit;
+}
+
+#footer .copyright li a:hover {
+    color: #fff;
+}
+.navbar
+{
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    /*border: 0px solid transparent;*/
+}
+
+
+.spotlight {
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+}
+.spotlight .image {
+    -moz-order: 1;
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1;
+    border-radius: 0;
+    width: 40%;
+
+}
+
+.spotlight .image img {
+    border-radius: 0;
+    width: 100%;
+
+
+}
+/* wyrownanie obrazka i tekstu*/
+.spotlight .content {
+    padding: 2em 4em 0.1em 4em ;
+    -moz-order: 2;
+    -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+    max-width: 48em;
+    width: 60%;
+
+}
+
+
+.spotlight-label
+{
+
+    height:200px;
+    width:180px;
+    background:red;
+
+}
+
+.container-add-car
+{
+    padding-left:0!important;
+    margin: 10px;
+}
+.h1-addcar{
+    text-align: left;
+
+}
+.production-year{
+    color: #000000;
+}
+.production-year-button{
+    margin-left: 10px;
+}
+.form-horizontal{
+    margin: 0 auto;
+    margin-top: 71px;
+    
+    height: 180%;
+    color: #fff;
+}
+.form-control{
+    
+    width: 180px;
+    
+}

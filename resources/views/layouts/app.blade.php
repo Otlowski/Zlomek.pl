@@ -16,7 +16,7 @@
 
         <!-- Scripts -->
         <script>
-            window.Laravel = <?php
+            window.Zlomek = <?php
 echo json_encode([
     'csrfToken' => csrf_token(),
 ]);
@@ -43,7 +43,7 @@ echo json_encode([
 
                         <!-- Branding Image -->
                         <a class="navbar-brand" href="{{ url('/') }}">
-                            {{ config('app.name', 'Laravel') }}
+                            Mój Złomek
                         </a>
                     </div>
 

@@ -27,12 +27,12 @@
                 <div class = "primary">
 
                     <section id="two" class="wrapper alt style2"> 
-                        <section class="spotlight">
+                        <section class="spotlight">`
                            
                             <div class="image"><img src="img/{{Auth::user()->photo}}.jpg" alt="" /></div><div class="content">
                                 <div class="row-form">
 
-                                    <div class="add-photo"><button class="button-profile">Dodaj avatar</button><br>
+                                    <div class="add-photo"><button class="button-profil">Dodaj avatar</button><br>
                                     </div>
 
                                     <div class="col-label">
@@ -65,7 +65,7 @@
                                     </div>
 
                                     <div>
-                                        <br><div class="add-photo"><button class="button-profile">Edytuj konto</button><br>
+                                        <br><div class="add-photo"><button class="button-profil">Edytuj konto</button><br>
                                         </div>
 
                                         <div class="line"></div>

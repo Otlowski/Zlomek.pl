@@ -37,8 +37,8 @@
                                 <ul class="nav navbar-nav">
 
 
-                                    <li><a href="#">Dodaj ogłoszenie</a></li>
-                                    <li><a href="#">Wyszukaj</a></li>
+                                    <li><a href="/addcar">Dodaj ogłoszenie</a></li>
+                                    <li><a href="/search">Wyszukaj</a></li>
 
                                 </ul>
                                 <form class="navbar-form navbar-left">
