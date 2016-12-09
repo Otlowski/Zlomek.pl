@@ -53,7 +53,7 @@
                                 </form>
 
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="{{ url('/register') }}"><span class=""></span> User Name</a></li>
+                                    <li><a href="{{ url('/login') }}"><span class=""></span> User Name</a></li>
                                 </ul>
 
                             </div>

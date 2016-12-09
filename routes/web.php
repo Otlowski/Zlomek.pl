@@ -18,22 +18,22 @@
 /* MODULE ROUTES */
 Route::group(['middleware' => ['web']], function () {
 
-
+    /*Homepage*/
     Route::get('/', function () {
         return view('welcome');
     });
-    Route::get('/search', function () {
-        return view('search');
-    });
     Route::get('/', 'Cars\CarsController@listCars');
+    /*TYLKO ZALOGOWANY UŻYTKOWNIK*/
+    Route::group(['middleware' => 'auth'], function () {
+        //posiada uprawnienia do dodawania ogłoszeń
+        Route::get('/addcar', ['uses' => 'Cars\CarsController@addCar']);
+        Route::post('/addcar', ['uses' => 'Cars\CarsController@addCar']);
+//        Route::post('/addcar',['uses' => 'Cars\CarsController@addImage']);
+        //posiada uprawnienia do szczegółowego wyszukiwania
+        Route::get('/search', function () {return view('search');});
+});
     
-    Route::get('/addcar', [     //niezalogowany nie posiadasz uprawnien do
-        'middleware' => 'auth', //dodawania ogloszen
-        'uses' => 'Cars\CarsController@addCar']);
-
-    Route::post('/newcar', 'Cars\CarsController@newCar');
-    
-
+   
 //Route::get('/home', 'Users\UserController@listUsers');
 
     Auth::routes();

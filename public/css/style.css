@@ -18,8 +18,8 @@
 
 }
 .primary{
-    background-color: #fff;
-    width: 960px;
+    /*    background-color: #fff;
+        width: 960px;*/
 
     * {
         margin: 0;
@@ -110,7 +110,7 @@
     }
 }
 .spotlight {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.4);
     -moz-align-items: center;
     -webkit-align-items: center;
     -ms-align-items: center;
@@ -250,4 +250,13 @@
     font-size: 14px;
     line-height: 1.42857143;
     color: #555;
+}
+
+.form-group__image
+{   
+    margin-left: 100px;
+    /*float: right;*/
+    width: 200px;
+    height: 132px;
+    /*background: red;*/
 }

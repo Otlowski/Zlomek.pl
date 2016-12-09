@@ -38,8 +38,8 @@
                                 <ul class="nav navbar-nav">
 
 
-                                    <li><a href="#">Dodaj ogłoszenie</a></li>
-                                    <li><a href="#">Wyszukaj</a></li>
+                                    <li><a href="/addcar">Dodaj ogłoszenie</a></li>
+                                    <li><a href="/search">Wyszukaj</a></li>
 
                                 </ul>
                                 <form class="navbar-form navbar-left">
@@ -66,26 +66,25 @@
 
                 </header>
 
-                <form class="form-horizontal" method="POST" action="/newcar"> 
+                <form class="form-horizontal" method="POST" action="/addcar"> 
                     <div class="h1-addcar">   
                         <p class="h1">Dodaj ogłoszenie :</p>   
                     </div>
                     <div class="form-group">
-
                         <label class="control-label col-sm-2" for="car_brand">Marka:</label>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" name="car_brand" placeholder="Wpisz marke">
                         </div>
                     </div>
-                    
-                   <div class="form-group">
+
+                    <div class="form-group">
 
                         <label class="control-label col-sm-2" for="car_model">Model:</label>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" name="car_model" placeholder="Wpisz model">
                         </div>
                     </div> 
-                    
+
                     <div class="form-group">
 
                         <label class="control-label col-sm-2" for="mileage">Przebieg:</label>
@@ -93,7 +92,7 @@
                             <input type="text" class="form-control" name="mileage" placeholder="Wpisz przebieg">
                         </div>
                     </div> 
-                    
+
                     <div class="form-group">
 
                         <label class="control-label col-sm-2" for="power">Moc KM:</label>
@@ -108,7 +107,7 @@
                             <input type="text" class="form-control" name="capacity" placeholder="Wpisz pojemność">
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
 
                         <label class="control-label col-sm-2" for="fuel">Rodzaj paliwa:</label>
@@ -116,7 +115,7 @@
                             <input type="text" class="form-control" name="fuel" placeholder="Wpisz rodzaj paliwa">
                         </div>
                     </div>
-                    
+
 
                     <div class="form-group">
 
@@ -129,15 +128,15 @@
                         <label class="control-label col-sm-2" for="production_year">Rok produkcji:</label>
                         <div class="col-sm-4 production-year"> 
                             <!--<div class="row">-->
-                                <div class="col-xs-6">
-                                    <div class="form-group">
-                                        <select class="selectpicker form-control" type="text" name="production_year" for="production_year">
-                                            <option>1993</option>
-                                            <option>1994</option>
-                                            <option>1995</option>
-                                        </select>
-                                    </div>
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <select class="selectpicker form-control" type="text" name="production_year" for="production_year">
+                                        <option>1993</option>
+                                        <option>1994</option>
+                                        <option>1995</option>
+                                    </select>
                                 </div>
+                            </div>
                             <!--</div>-->
 
 
@@ -145,16 +144,15 @@
                             <input type="hidden" name="_token" value="{!! csrf_token() !!}">
                         </div>
                     </div>
-
-                    <div class="form-group"> 
-                        <div class="col-sm-offset-2 col-sm-10">
-
-                        </div>
+                    <div class="form-group__image">
+                        <label style="color:#000;">ADD IMAGE</label>
+                        <image src="img/cars/default.jpg" style="width:200px;height:150px">
+                        <form enctype="multipart/form-data" action="/addcar" method="POST">  
                     </div>
-
                     <div class="form-group"> 
                         <div class="col-sm-offset-2 col-sm-10">
                             <button type="submit" id="Submit" value="Add" class="btn btn-default">Submit</button>
+                            <input style="float:right;" type="file" name="image">
                         </div>
                     </div>
                 </form>          
