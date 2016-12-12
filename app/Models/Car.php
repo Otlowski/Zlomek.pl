@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Models;
+
 use Illuminate\Database\Eloquent\Model as Eloquent;
+use App\Models\Junkyards;
 
+class Car extends Eloquent {
 
-class Car extends Eloquent
-{
     public $table = 'cars';
 
     /**
@@ -14,7 +15,7 @@ class Car extends Eloquent
      * @var array
      */
     protected $fillable = [
-        'users__id', 
+        'users__id',
         'junkyards__id',
         'car_brand',
         'car_model',
@@ -31,5 +32,8 @@ class Car extends Eloquent
      *
      * @var array
      */
-   
+    public function junkyard() {
+        return $this->belongsTo('App\Models\Junkyards', 'junkyards__id');
+    }
+
 }

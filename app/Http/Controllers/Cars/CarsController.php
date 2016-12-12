@@ -11,8 +11,11 @@ use Image;
 class CarsController extends Controller {
 
     public function listCars() {
+        $cars = Car::whereNull('deleted_at');
+        $query = $cars->with('junkyard')->get();
+               
         return view('welcome')
-                        ->with('cars', Car::all());
+                        ->with('cars', $query);
     }
 
     public function addCar() {
